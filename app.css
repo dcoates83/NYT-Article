@@ -1,3 +1,9 @@
+/* Generic Styling */
+a{
+    color: #326891;
+}
+
+
 /* Header */
 .header-container{
     width: 100%;
@@ -5,7 +11,7 @@
     top: 0;
     background-color: white;
     border-bottom: 1px solid #e2e2e2;
-    
+    z-index: 1;
 } 
 
 .nav-bar{
@@ -94,8 +100,9 @@ li{
     align-items: center;
     margin: 0 auto;
     width: 600px;
-   padding: 10px 0 0 0;
+   padding: 10px 0 20px 0;
    border-top: 1px solid #ebebeb;
+
 }
 .social-icons{
     padding: 10px;
@@ -107,7 +114,7 @@ li{
     vertical-align: middle;
     width: 15px;
     background-color: #eee;
-    border: 1px #eee solid;
+    border-top: 1px #eee solid;
     border-radius: 100%;
     padding: 5px;
     width: 15px;
@@ -119,3 +126,361 @@ li{
 }
 
 /* Article Main Image */
+.space-pic{
+    min-width: 600px;
+    max-width: 1004px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.img-txt{
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    color: #666;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.name{
+    color: #888;
+    letter-spacing: .01px;
+    font-size: small;
+}
+
+/* Author Styling */
+.author{
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    color: #333;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    -webkit-text-decoration-color: #ccc;
+    text-decoration-color: #ccc;
+    
+}
+.by{
+    font-weight: 700;
+    font-family:  Helvetica, sans-serif;
+    font-style: normal;
+    color: #333;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+}
+.author-date{
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    display: block;
+}
+
+/* Article Container */
+.article-container{
+   
+    margin: auto;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    margin-bottom: 0.78125rem;
+    margin-top: 0;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    color: #333;
+    width: calc(100% - 40px);
+    max-width: 600px;
+    margin-bottom: 1rem;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+/* Ads */
+.sign-up-ad{
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+.suscribe{
+    display: block;
+    text-decoration: none;
+    color: rgb(50, 104, 145)
+}
+
+.border-top, .border-bottom{
+    border: .0001rem solid #eee;
+    width: 13%;
+    margin: 15px auto 15px;
+
+}
+/* Article Section - Theory Of Inflation Formatting */
+.container-inflation-theory{
+        display: grid; 
+        grid-template-columns:repeat(4,minmax(228px, 1fr)) ; 
+        grid-template-rows: auto 1fr 1fr auto;
+        gap: 5px 5px;
+        max-width: 945px;
+        margin: 0 auto 20px;
+
+        
+      }
+.album__artwork{
+   width: 100%;
+   height: 150px;
+}
+.album-start{
+    grid-column: 1 / -1;
+}
+.author-2-3{
+    line-height: 1.125rem;
+    font-weight: 500;
+    font-style: normal;
+    font-family: franklin,arial,helvetica,sans-serif;
+    font-size: .875rem;
+    color: #333;
+    width: 945px;
+    display: block;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+.author-border{
+    border-top: 1px solid black;
+    width: 30% ;
+    margin: 10px 0 10px;
+}
+.inf-theory-boldtext{
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: .05em;
+    line-height: 17px;
+    padding-right: 10px;
+}
+
+.album__desc{
+    font-family: franklin , arial ,helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 100;
+    color: #000000; 
+}
+.inflation-theory-subtext{
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 18px;
+    line-height: 1.125rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: georgia,times new roman,times,serif;
+    color: #666;
+    margin: 8px 0 3px 0;
+}
+.inflation-theory{
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 24px;
+    line-height: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    font-family: georgia,times new roman,times,serif;
+    margin: 1em 0 0  0;
+}
+/* Video Styling */
+
+.yt-video{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity .25s cubic-bezier(0,0,0.2,1);
+    background-size: cover;
+    cursor: pointer;
+}
+.yt-text{
+    display: block;
+    color: #666;
+    padding: 10px 20px 0;
+    text-align: left;
+    font-size: 15px;
+
+}
+
+/* Telescope Picture */
+
+.telescope-pic{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+/* Bottom comments */
+.bottom-version{
+    font-family:franklin, helvetica, arial, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    width: calc(100% - 40px);
+    max-width: 600px;
+    margin: 0px auto 1em;
+    color: rgb(102, 102, 102);
+    }
+    /* bottom button */
+    .bottom-btn{
+        background-color: rgb(86, 123, 149);
+    border: 1px solid rgb(50, 104, 145);
+    border-radius: 3px;
+    color: white;
+    display: block;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 0px;
+    text-transform: uppercase;
+    transition: background-color 0.6s ease 0s;
+    width: 100%;
+    margin-bottom: 0;
+    }
+    .btn-container{
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        
+        
+    }
+/* Bottom Page Navigation */
+.bottom-header-border{
+    background-color: #fff;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 2px solid #e2e2e2;
+    content: '';
+    display: block;
+    height: 1px;
+    margin:3em 2.5em 1em 2.5em ;
+    width: calc(100%-2.5em);
+}
+.bottom-header{
+    display:flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.home-page-header{
+    color: rgb(86, 123, 149);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px;
+    text-decoration: none;
+}
+
+.nyt-logo-bottom{
+    display: block;
+    height: 44px;
+    vertical-align: middle;
+    width: 184px;
+}
+.a-nav{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+/* Grid for site links */
+.related-links-container{
+    display: grid;
+    grid-auto-flow: column;
+    
+    
+}
+@media screen and (max-width: 1138px){
+    .related-links-container, li{
+        display: grid;
+        grid-auto-flow: row;
+        white-space:normal;
+        
+    }
+}
+
+.rlt-links-subjects{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family: franklin, helvetica, arial, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 500;
+    height: 23px;
+    line-height: 16px;
+}
+.rlt-links-header{
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    font-weight: 700;
+    font-family: franklin, helvetica, arial, sans-serif;
+    height: 25px;
+    line-height: 15px;
+    margin: 0px;
+    text-transform: uppercase;
+    width: 150px;
+    
+}
+/* Formating for the Right side of index site */
+.suscribe-format{
+    border-left: 1px solid rgb(226, 226, 226);
+    padding-left: 15px;
+    
+}
+.etc{
+    list-style: none;
+    margin: 2px 0px 0px;
+    padding: 10px 0px 0px;
+    border-top: 1px solid rgb(226, 226, 226);
+}
+.small-text{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family: franklin, helvetica, arial, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 150px;
+    font-size: 11px;
+    font-weight: 500;
+    height: 23px;
+    line-height: 21px;
+}
+.big-text{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family: franklin, helvetica, arial, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 30px;
+    line-height: 15px;
+    padding-bottom: 0px;
+}
+.unique-logos{
+    display: inline;
+    height: 13px;
+    width: 13px;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+li{
+    white-space: nowrap;
+}
